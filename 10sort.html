@@ -1,0 +1,32 @@
+<head>
+    <script src="classes.js"></script>
+    <script src="simpleData.js"></script>
+</head>
+
+<script>
+
+    
+    for(let i=0;i<numeros.length;i++)
+    {
+        for(let j=i+1;j<numeros.length;j++)
+        {
+            if(numeros[j]<numeros[i])
+            {
+                let temp = numeros[i];
+                numeros[i]=numeros[j];
+                numeros[j]=temp;
+            }
+        }
+    }    
+
+
+    console.log("Ordenado en For:", numeros);
+
+    //Sort
+    const copiaDeNumeros = [...numeros];
+    copiaDeNumeros.sort((a,b)=>a>b);
+    console.log("Ordenado en For:", copiaDeNumeros);
+    
+    
+
+</script>

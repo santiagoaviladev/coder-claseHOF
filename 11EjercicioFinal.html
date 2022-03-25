@@ -1,0 +1,100 @@
+<head>
+    <script src="classes.js"></script>
+    <script src="simpleData.js"></script>
+</head>
+<script>
+
+    /*1. Escriba una funcion que permita administrar el inventario de una tienda virtual 
+
+        Su sistema debe permitir lo siguiente: 
+            1. Escoger una opcion entre: 
+                A. Crear un producto
+                B. Listar todos los productos de la tienda (1 a 1 / no imprimir el array de forma literal)
+                C. Borrar un producto, dado su id 
+                D. Modificar un producto, dado su id
+                E. FIN
+
+            Los productos deben tener la siguiente estructura: 
+
+            id
+            nombre
+            precio
+
+            Si el usuario ingresa FIN, debe terminar el proceso
+            SI el usuario ingresa una opción inválida debe mostrar un mensaje indicando el error y mostrar el menú de nuevo
+
+    */
+
+    const tienda = new Tienda([]);
+    mostrarMenu();
+
+    function mostrarMenu()
+    {
+        let op="";
+        while(op!=="C")
+        {
+            op = prompt(`Ingrese una opción: 
+                                    A. Crear un producto
+                                    B. Listar Productos
+                                    C. Eliminar Producto
+                                    D. Modificar Producto
+                                    E. Obtener el precio de todos los productos
+                                    F. FIN `);
+            if(op==="A")
+            {
+                const producto = menuCrearProducto();
+                tienda.agregarProducto(producto);
+            }
+            else if(op==="B")
+            {
+                
+            }
+            else if(op==="C")
+            {
+                
+            }
+            else if(op==="D")
+            {
+                
+            }
+            else if(op==="E")
+            {
+                
+            }
+            else if(op==="F")
+            {
+                alert("GRACIAS")
+            }
+            else 
+            {
+                alert("OPCION INVÁLIDA");
+            }
+        }
+    }
+
+    function menuCrearProducto()
+    {
+        let id = prompt("ingrese el id");
+        let nombre = prompt("ingrese el nombre");
+        let precio = prompt("ingrese el precio");
+        return new Producto(id, nombre, precio);
+    }
+
+    function menuEliminarProducto()
+    {
+        let id = prompt("ingrese el id del producto que quiere eliminar");
+        
+       
+    }
+
+    function menuModificarProducto()
+    {
+        let id = prompt("ingrese el id del producto que quiere modificar");
+        
+       
+    }
+
+
+
+
+</script>
