@@ -7,5 +7,6 @@ const productos = [
     {id:3,nombre:"Cerveza",precio:"3000"},
     {id:4,nombre:"Jugo",precio:"4000"},
     {id:5,nombre:"Carne",precio:"5000"},
+    {id:5,nombre:"Carve",precio:"7000"},
 
 ]

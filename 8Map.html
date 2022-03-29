@@ -22,5 +22,17 @@
 
     //Map
     
+    const transformado = productos.map((element)=>{
+
+        return {
+            id: element.id,
+            nombre:  element.nombre,
+            precio: element.precio,
+            categoria: prompt(`Ingrese Categoria de: ${nombre}`)
+        }
+    });
+
+    console.log("TRANSFORMADO", transformado);
+    
 
 </script>

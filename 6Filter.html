@@ -17,7 +17,12 @@
 
     console.log("Encontrados en For:", resultados);
 
-
     //Filter
+    const encontrados = productos.filter((producto)=>
+        producto.nombre.indexOf(nombreIngresado)!==-1
+    )
+
+    console.log("Encontrados en filter", encontrados);
 
 </script>
+
